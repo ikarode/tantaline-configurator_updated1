@@ -1,0 +1,114 @@
+html
+    font-family: 'Roboto', sans-serif
+    -webkit-font-smoothing: antialiased
+
+body
+    background: #F5F5F6
+    font-size: 15px
+    line-height: 24px
+    margin: 0
+    padding: 0
+
+h1, h2, h3, h4, h5, h6
+    margin: 0
+    
+h3
+    font-weight: 400
+    line-height: 1.4
+    padding: 15px 0px
+
+a,
+a:hover,
+a:focus,
+a:active
+    color: #424242 !important
+    text-decoration: none !important
+    
+*
+    outline: none
+
+.Touchable
+    cursor: pointer
+    
+.Hide_Overflow
+    overflow: hidden
+    
+.input-group--text-field.input-group--light.input-group--single-line.input-group--text-field.input-group--light.input-group--focused label, .input-group--text-field.input-group--light input, .input-group--text-field.input-group--light input:disabled, .input-group--text-field.input-group--light label, .input-group--text-field.input-group--light textarea, .input-group--text-field.input-group--light textarea:disabled {
+    color: rgba(0,0,0,.60) !important;
+}
+
+.input-group--text-field.input-group--light.input-group--dirty input, .input-group--text-field.input-group--light.input-group--dirty textarea {
+    color: rgba(0,0,0,.90) !important;
+}
+    
+.Form_Group
+    box-sizing: border-box
+    display: block
+    margin-top: 18px
+    padding: 2px 2px 20px 2px
+    position: relative
+
+.Form_Group .Label
+    bottom: 100%
+    color: rgba(0,0,0,0.6)
+    left: 0
+    max-width: 100%
+    overflow: hidden
+    order: 1
+    padding-left: 3px
+    pointer-events: none
+    position: absolute
+    right: auto
+    text-overflow: ellipsis
+    transform: translate3d(0,28px,0) scale(1)
+    transition: 0.2s ease all
+    white-space: nowrap
+    width: 100%
+
+.Form_Group .Input
+    border-color: rgba(0,0,0,0.12)
+    border-style: solid
+    border-radius: 0
+    border-width: 0 0 1px
+    box-sizing: border-box
+    font-size: 15px
+    height: 30px
+    line-height: 26px
+    order: 2
+    padding: 2px 2px 1px
+    transition: 0.2s ease border-color
+    width: 100%
+    
+.Form_Group .Input[disabled]
+    border-style: dashed
+    cursor: not-allowed
+
+.Form_Group .Input:focus
+    border-color: #01579B
+    border-width: 0 0 2px
+    outline: none
+    padding-bottom: 0px
+
+.Form_Group .Input:focus ~ label,
+.Form_Group .Input.Active ~ label
+    bottom: 148%
+    color: #01579B
+    font-size: 12px
+    
+.Container
+    width: 100%
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px)
+    .Container
+        lost-center: 750px
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px)
+    .Container
+        lost-center: 970px
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px)
+    .Container
+        lost-center: 1170px
